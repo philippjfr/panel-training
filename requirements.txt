@@ -1,0 +1,9 @@
+altair
+datetime
+holoviews
+jupyterlab
+jupyterlab-myst
+numpy
+pandas
+panel
+pyarrow
