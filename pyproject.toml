@@ -20,39 +20,16 @@ dependencies = [
 fix = true
 
 [tool.ruff.lint]
-select = [
-    # "B",
-    # "D",
-    "E",
-    "F",
-    # "FLY",
-    "I",
-    # "ICN",
-    # "NPY",
-    # "PIE",
-    # "PLC",
-    # "PLE",
-    # "PLR",
-    # "PLW",
-    # "RUF",
-    # "UP",
-    "W",
-]
+select = ["B", "E", "F", "FLY", "I", "ICN", "PIE", "PLC", "PLE", "PLR", "PLW", "RUF", "UP", "W"]
 ignore = [
-    # "E402", # Module level import not at top of file
     "E501", # Line too long
-    # "E701", # Multiple statements on one line
-    # "E712", # Comparison to true should be is
-    # "E731", # Do not assign a lambda expression, use a def
-    # "E741", # Ambiguous variable name
-    # "PLC0415", # `import` should be at the top-level of a file
-    # "PLE0604", # Invalid object in `__all__`, must contain only strings
-    # "PLE0605", # Invalid format for `__all__`
-    # "PLR091", # Too many arguments/branches/statements
-    # "PLR2004", # Magic value used in comparison
-    # "PLW2901", # `for` loop variable is overwritten
-    # "RUF012", # Mutable class attributes should use `typing.ClassVar`
-    # "RUF021", # parenthesize-chained-operators
+    "E712", # Comparison to true should be is
+    "E731", # Do not assign a lambda expression, use a def
+    "E741", # Ambiguous variable name
+    "PLR091", # Too many arguments/branches/statements
+    "PLR2004", # Magic value used in comparison
+    "PLW2901", # `for` loop variable is overwritten
+    "RUF012", # Mutable class attributes should use `typing.ClassVar`
 ]
 
 [tool.ruff.lint.pyflakes]
