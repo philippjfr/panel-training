@@ -1,0 +1,55 @@
+exclude: (\.min\.js$|\.svg$|\.html$)
+default_stages: [pre-commit]
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: 3e8a8703264a2f4a69428a0aa4dcb512790b2c8c # frozen: v6.0.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: mixed-line-ending
+      - id: check-builtin-literals
+      - id: check-case-conflict
+      - id: check-docstring-first
+      - id: check-executables-have-shebangs
+      - id: check-toml
+      - id: check-yaml
+      - id: check-json
+      - id: detect-private-key
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: 1a1f58ba4c35362efe8fed2279715a905baee93d # frozen: v0.14.8
+    hooks:
+      - id: ruff-check
+  - repo: https://github.com/hoxbro/clean_notebook
+    rev: 9f524ec87ccbde34b35dbab058b45024cdb41887 # frozen: v0.1.17
+    hooks:
+      - id: clean-notebook
+        args: [--strip-trailing-newlines]
+  - repo: https://github.com/crate-ci/typos
+    rev: 24c5854966d17070a3b25e2c2dfc63ec5bc94cf4 # frozen: v1.40.0
+    hooks:
+      - id: typos
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: 745eface02aef23e168a8afb6b5737818efbea95 # frozen: v0.11.0.1
+    hooks:
+      - id: shellcheck
+  - repo: https://github.com/hoxbro/prettier-pre-commit
+    rev: bae77de89db2ee6b2052f9647b14246e9ee19cd1 # frozen: v3.7.4
+    hooks:
+      - id: prettier
+        types_or:
+          - markdown
+          - yaml
+          - css
+  - repo: https://github.com/hoxbro/taplo-pre-commit
+    rev: 605f960c3c571f814f535622a688bcde63ee87f6 # frozen: v0.9.3
+    hooks:
+      - id: taplo
+        args:
+          [
+            --option,
+            align_comments=false,
+            --option,
+            column_width=100,
+            --option,
+            "indent_string=    ",
+          ]
