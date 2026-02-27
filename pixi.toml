@@ -1,4 +1,4 @@
-[project]
+[workspace]
 name = "panel-training"
 version = "0.1.0"
 description = "Panel training notebooks and examples."
@@ -13,7 +13,7 @@ bokeh = "*"
 holoviews = "*"
 hvplot = "*"
 ipykernel = "*"
-jupyter-bokeh = "*"
+jupyter_bokeh = "*"
 jupyterlab = "*"
 jupyterlab-myst = "*"
 lumen = "*"
