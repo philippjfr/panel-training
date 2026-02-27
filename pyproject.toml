@@ -21,6 +21,9 @@ dependencies = [
     "ipykernel",
 ]
 
+[dependency-groups]
+tests = ["pytest", "nbval"]
+
 [tool.ruff]
 fix = true
 
