@@ -10,7 +10,6 @@ dependencies = [
     "hvplot",
     "jupyterlab",
     "jupyterlab-myst",
-    "lumen",
     "numpy",
     "pandas",
     "panel",
