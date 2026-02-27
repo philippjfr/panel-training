@@ -23,7 +23,6 @@ Then start JupyterLab:
 uv run jupyter lab
 ```
 
-
 ## Option 2: Setup with pixi
 
 This project includes a `pixi.toml`.
