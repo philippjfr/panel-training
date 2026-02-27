@@ -28,7 +28,7 @@ jobs:
       - name: Setup uv
         uses: astral-sh/setup-uv@v7
       - name: Install uv
-        run: uv sync --extra test
+        run: uv sync --group tests
       - name: Test
         run: |
           uv run -m pytest --nbval-lax
