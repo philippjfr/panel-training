@@ -5,6 +5,7 @@ requires-python = "==3.13.*"
 dependencies = [
     "aiohttp",
     "altair",
+    "bokeh",
     "holoviews",
     "hvplot",
     "jupyterlab",
@@ -12,9 +13,16 @@ dependencies = [
     "numpy",
     "pandas",
     "panel",
+    "panel-material-ui",
+    "param",
     "pyarrow",
     "pyparsing",
+    "jupyter-bokeh",
+    "ipykernel",
 ]
+
+[dependency-groups]
+tests = ["pytest", "nbval"]
 
 [tool.ruff]
 fix = true
