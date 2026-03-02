@@ -12,7 +12,7 @@ dependencies = [
     "jupyterlab-myst",
     "numpy",
     "pandas",
-    "panel",
+    "panel ==1.8.8",
     "panel-material-ui",
     "param",
     "pyarrow",
